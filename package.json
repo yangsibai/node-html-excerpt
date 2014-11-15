@@ -1,6 +1,6 @@
 {
-  "name": "html-cut",
-  "version": "0.1.0",
+  "name": "html-excerpt",
+  "version": "0.1.1",
   "description": "cut html and remain tag",
   "main": "lib/index.js",
   "scripts": {

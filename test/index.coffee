@@ -1,4 +1,4 @@
-cutter = require("../src/index")
+excerpt = require("../src/index")
 should = require("should")
 
 describe "html cut test", ->
@@ -14,6 +14,9 @@ describe "html cut test", ->
                 </div>
             </div>
             """
-       res = cutter.cut(html, 20)
-       console.log res
+       res = excerpt.text(html, 20)
        res.should.be.a.String
+    it "should convert 2", ->
+        html = "<div><p>a paragraph</p><span>a test span</span><p>second paragraph</p></div>"
+        res = excerpt.text(html, 20, "...")
+        res.should.be.a.String
