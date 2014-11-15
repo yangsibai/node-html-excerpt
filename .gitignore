@@ -35,3 +35,4 @@ lib
 
 *.js
 *.map
+.Ds_Store
