@@ -1,0 +1,33 @@
+{
+  "name": "html-cut",
+  "version": "0.1.0",
+  "description": "cut html and remain tag",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "coffee -co lib/ src/*.coffee",
+    "postpublish": "rm -rf lib",
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangsibai/node-html-cut.git"
+  },
+  "keywords": [
+    "html",
+    "cut",
+    "utility"
+  ],
+  "author": "massimo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangsibai/node-html-cut/issues"
+  },
+  "homepage": "https://github.com/yangsibai/node-html-cut",
+  "dependencies": {
+    "cheerio": "^0.18.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  }
+}
